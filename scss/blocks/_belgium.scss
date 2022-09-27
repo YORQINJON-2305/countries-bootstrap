@@ -27,12 +27,16 @@
 }
 
 .belgium-list {
+    flex-wrap: wrap;
     @include list-unstiled(0, 0, 0);
 }
 
 .belgium-item {
     line-height: 32px;
     color: var(--main-text-color);
+    &:first-child, &:nth-child(2), &:nth-child(4), &:nth-child(5){
+        white-space: nowrap;
+    }
 }
 
 .countries-link-title {
